@@ -1,0 +1,145 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    background-color: #000; /* Fondo oscuro por si no se carga el video */
+}
+
+/* Video de fondo */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté sobre el video */
+    color: #fff; /* Color de texto blanco por defecto */
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Estilo para las tarjetas de formularios (fondo blanco semitransparente) */
+.card-container {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Aplica desenfoque en el fondo */
+}
+
+/* Header de las tarjetas */
+.card-header {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo más oscuro para el header */
+    color: #fff; /* Asegura que el texto del header sea blanco */
+}
+
+/* Formularios */
+.form-label {
+    font-size: 1.1rem;
+    color: #333; /* Texto oscuro para las etiquetas */
+}
+
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente para los campos */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borde blanco semi-transparente */
+    color: #000; /* Texto negro para mayor legibilidad */
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Sombra ligera para darle profundidad */
+}
+
+/* Botones */
+.btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Botón para registrar */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Botón para eliminar */
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Botón para buscar */
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+/* Botón para modificar */
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Estilo para los resultados de búsqueda */
+#searchResults {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#resultsList {
+    list-style: none;
+    padding: 0;
+}
+
+#resultsList li {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #212529;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
